@@ -1,0 +1,16 @@
+.wrapper{
+    justify-content: center;
+    
+    
+
+}
+.loginbutton{
+    background-color: blue;
+    border-radius: 5px;
+}
+.container1{
+    justify-content: space-evenly;
+    margin: 10%;
+    display: flex;
+    
+}

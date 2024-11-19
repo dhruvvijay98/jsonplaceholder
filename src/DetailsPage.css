@@ -1,0 +1,28 @@
+.wrapper{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 5%;
+    justify-content: space-between;
+    
+}
+.container h3{
+    color: blue;
+}
+.card{
+    width: 30%;
+    border: solid gray;
+    border-radius: 10px;
+    background-color: azure;
+    
+}
+.wrapper h1 {
+    color: brown;
+}
+a.link{
+    margin-left: 950px;
+    font-size: x-small;
+}
