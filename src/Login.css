@@ -1,109 +1,107 @@
-/* .wrapper1{
-   justify-content: center;
-   border: 3px solid black;
-   width: 50%;
-   margin: 20%;
+/* Wrapper for the entire login form */
+.wrapper1 {
+  max-width: 400px;
+  margin: 0 auto; /* Center horizontally */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Adjust for true centering */
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
 }
-.wrapper1 h1{
-    color: blue;
-    
+
+/* Header styling */
+.wrapper1 h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
-.entries{
-    align-items: center;
-   display: flex;
-   flex-direction: column;
-    
-} */
 
-/* Centering the entire page and giving background color */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Form container */
+.wrapper1 .entries {
+  display: flex;
+  flex-direction: column;
+}
 
-    margin: 0;
-  }
-  
-  /* Wrapper for the login box */
-  .wrapper1 {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  /* Styling the title */
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  /* Styling the form elements */
-  .entries {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .entries label {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  .entries input {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-  }
-  
-  /* Styling the submit button */
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Wrapper for Sign Up link */
-  .wrapper2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .wrapper2 p {
-    margin-right: 10px;
-    color: #555;
-  }
-  
-  .wrapper2 button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .wrapper2 button:hover {
-    background-color: #0056b3;
-  }
-  
+/* Form fields styling */
+.wrapper1 .entries div {
+  margin-bottom: 15px;
+}
+
+/* Labels styling */
+.wrapper1 label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Input fields */
+.wrapper1 input[type="email"],
+.wrapper1 input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Input fields focus effect */
+.wrapper1 input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+/* Login button - smaller and centered */
+.wrapper1 button[type="submit"] {
+  width: 120px; /* Reduced width for a smaller button */
+  padding: 8px 10px; /* Smaller padding */
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px auto 0; /* Center horizontally within the form */
+  display: block; /* Block-level element to allow centering */
+}
+
+.wrapper1 button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Wrapper for signup section */
+.wrapper2 {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Signup prompt styling */
+.wrapper2 p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Signup button */
+.wrapper2 button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6c757d;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.wrapper2 button:hover {
+  background-color: #5a6268;
+}

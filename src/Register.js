@@ -1,4 +1,5 @@
 import React from "react";
+import './Register.css';
 import { useNavigate } from "react-router-dom";
 
 function Register() {
@@ -12,7 +13,7 @@ function Register() {
     };
 
   return (
-    <div>
+    <div className="wrapper-register">
       <h1>User Registration</h1>
       <form action="#">
         <div>
@@ -43,7 +44,7 @@ function Register() {
           />
         </div>
         <div>
-          <label htmlFor="password">Email</label>
+          <label htmlFor="password">Password</label>
           <input
             type="text"
             id="password"
